@@ -1,0 +1,5 @@
+﻿  main.cpp
+c:\users\jake\desktop\managerproject\whitepaper\test.h(15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+c:\users\jake\desktop\managerproject\whitepaper\test.h(19): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+c:\users\jake\desktop\managerproject\whitepaper\test.h(23): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  WhitePaper.vcxproj -> C:\Users\Jake\Desktop\ManagerProject\x64\Debug\WhitePaper.exe

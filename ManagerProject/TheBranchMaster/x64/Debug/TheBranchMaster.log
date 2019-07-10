@@ -1,0 +1,14 @@
+﻿  Order.cpp
+c:\users\jake\desktop\managerproject\thebranchmaster\token.h(14): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+c:\users\jake\desktop\managerproject\thebranchmaster\token.h(18): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+c:\users\jake\desktop\managerproject\thebranchmaster\token.h(22): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  VectorInteract.cpp
+c:\users\jake\desktop\managerproject\thebranchmaster\token.h(14): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+c:\users\jake\desktop\managerproject\thebranchmaster\token.h(18): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+c:\users\jake\desktop\managerproject\thebranchmaster\token.h(22): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  main.cpp
+c:\users\jake\desktop\managerproject\thebranchmaster\token.h(14): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+c:\users\jake\desktop\managerproject\thebranchmaster\token.h(18): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+c:\users\jake\desktop\managerproject\thebranchmaster\token.h(22): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  Generating Code...
+  TheBranchMaster.vcxproj -> C:\Users\Jake\Desktop\ManagerProject\x64\Debug\TheBranchMaster.exe
