@@ -1,0 +1,6 @@
+﻿  ShoppingMenu.cpp
+C:\Users\Dell\source\repos\ManagerProject\ManagerProject\TheBranchMaster\Token.h(14,1): warning C4267:  'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Dell\source\repos\ManagerProject\ManagerProject\TheBranchMaster\Token.h(18,1): warning C4267:  '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Dell\source\repos\ManagerProject\ManagerProject\TheBranchMaster\Token.h(22,1): warning C4267:  'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Dell\source\repos\ManagerProject\ManagerProject\TheBranchMaster\ShoppingMenu.cpp(11,21): warning C4267:  '=': conversion from 'size_t' to 'int', possible loss of data
+  TheBranchMaster.vcxproj -> C:\Users\Dell\source\repos\ManagerProject\ManagerProject\x64\Debug\TheBranchMaster.exe
