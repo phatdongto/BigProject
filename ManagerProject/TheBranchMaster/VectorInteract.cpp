@@ -3,7 +3,7 @@
 #include"Items.h"
 #include"Order.h"
 
-bool ManageVector::ImportItemsToVectorA(vector<StorageItem> &VBItems) {
+bool ManageVector::ImportItemsToVectorA(vector<StorageItem>& VBItems) {
 	fstream FileIn;
 	StorageItem add;
 
@@ -15,8 +15,8 @@ bool ManageVector::ImportItemsToVectorA(vector<StorageItem> &VBItems) {
 
 	while (!FileIn.eof()) {  //Parse and import to Vector
 		if (!FileIn.eof())
+		getline(FileIn, tmp, '\n');
 
-			getline(FileIn, tmp, '\n');
 		vector<string> hold = Tokenizer::Parse(tmp, ", ");
 		add.setID(hold[0]);  //0ID  1Name  2Quantity  3Company  4Origin  5Price
 		add.setName(hold[1]);
@@ -67,7 +67,7 @@ vector<SellItem> GetItemForOrder(string Path) {
 
 //-----------------------------------------------------------------------------
 
-bool ManageVector::ImportOrderToVectorB(vector<BaseOrder> &VBOrders)
+bool ManageVector::ImportOrderToVectorB(vector<BaseOrder>& VBOrders)
 {
 	fstream FileIn;
 	FileIn.open("OrderMaterial//OrderList.txt", ios::in);
@@ -82,7 +82,7 @@ bool ManageVector::ImportOrderToVectorB(vector<BaseOrder> &VBOrders)
 	{
 		if (!FileIn.eof())
 
-		getline(FileIn, tmp, '\n');
+			getline(FileIn, tmp, '\n');
 		vector<string> hold = Tokenizer::Parse(tmp, ", ");
 		add.setOrderID(hold[0]);
 		add.setCustomerName(hold[1]);
@@ -100,5 +100,60 @@ bool ManageVector::ImportOrderToVectorB(vector<BaseOrder> &VBOrders)
 	return true;
 }
 
+bool ManageVector::ExportItemsToTXT(vector<StorageItem>& VBItems)
+{
+	ofstream file;
+
+	file.open("Storage//ItemStorage.txt");
+	if (!file.is_open()) {
+		return false;
+	}
+	for (int i = 0; i < VBItems.size(); i++) {
+		file << VBItems[i].ID() << ", ";  
+		file << VBItems[i].Name() << ", ";
+		file << VBItems[i].Quantity() << ", ";
+		file << VBItems[i].Company() << ", ";
+		file << VBItems[i].Origin() << ", ";
+		file << VBItems[i].Price() ;
+		if(i!=VBItems.size()-1)
+		file << "\n";
+	}
+	file.close();
+
+	return true;
+}
+
+//while (!FileIn.eof()) {
+//	/*if(!FileIn.eof())*/
+//	
+//	getline(FileIn, tmp, ',');
+//	add.setID(tmp);
+//
+//	getline(FileIn, tmp, ',');
+//	add.setName(tmp);
+//
+//	getline(FileIn, tmp, ',');
+//	add.setQuantity(stoi(tmp));
+//
+//	getline(FileIn, tmp, ',');
+//	add.setCompany(tmp);
+//
+//	getline(FileIn, tmp, ',');
+//	add.setOrigin(tmp);
+//
+//	getline(FileIn, tmp, '\n');
+//	add.setPrice(stoi(tmp));
+//
+//	VBItems.push_back(add);
+//}
+//----------------------------------
+string ManageVector::ToString(StorageItem c)
+{
+
+	stringstream writer;
+	writer << c.ID() << ", " << c.Name() << ", " << c.Company() << ", " << c.Origin() << ", " << c.Price() << ", " << c.Quantity();
+	return writer.str();
+
+}
 
 

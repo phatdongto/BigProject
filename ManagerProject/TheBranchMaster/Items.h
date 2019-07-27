@@ -18,12 +18,12 @@ private:
 	string m_origin;
 	long long m_price;
 public:
-	string ID() { return m_ID; }
-	string Name() { return m_name; }
+	string& ID() { return m_ID; }
+	string& Name() { return m_name; }
 	
-	string Company() { return m_company; }
-	string Origin() { return m_origin; }
-	long long Price() { return m_price; }
+	string& Company() { return m_company; }
+	string& Origin() { return m_origin; }
+	long long& Price() { return m_price; }
 	void setID(string value) { m_ID = value; }
 	void setName(string value) { m_name = value; }
 	
@@ -68,8 +68,10 @@ public:
 
 class StorageItem : public BaseItem{  //thong tin vat pham luu tru
 	int	m_quantity;
+	
 public:
-	int Quantity() { return m_quantity; }
+	
+	int& Quantity() { return m_quantity; }
 	void setQuantity(int value) { m_quantity = value; }
 public:
 	StorageItem() {

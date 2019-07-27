@@ -1,7 +1,7 @@
 #pragma once
 #define _CRT_SECURE_NO_WARNINGS
 #include<iostream>
-#include"Token.h"
+//#include"Token.h"
 #include <ctime>
 #include<sstream>
 using namespace std;
@@ -47,5 +47,4 @@ public:
 	string DToString();
 	date Parse(string s);
 };
-
 

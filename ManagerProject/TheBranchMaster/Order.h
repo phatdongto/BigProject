@@ -17,7 +17,7 @@ private:
 public:
 	string OrderID() { return m_OrderID; }
 	string CustomerName() { return m_customer_name; }
-	date& BookDay() { return m_book_day; }
+	date BookDay() { return m_book_day; }
 	vector<SellItem> Vector() { return m_VSellItem; }
 
 	void setCustomerName(string value) { m_customer_name = value; }

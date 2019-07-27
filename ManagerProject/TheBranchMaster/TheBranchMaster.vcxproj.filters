@@ -30,6 +30,12 @@
     <ClCompile Include="Order.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="addProducts.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Date.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Items.h">
@@ -47,12 +53,18 @@
     <ClInclude Include="VectorInteract.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="addProducts.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Storage\ItemStorage.txt">
       <Filter>Resource Files\Storage</Filter>
     </Text>
     <Text Include="OrderMaterial\OrderList.txt">
+      <Filter>Resource Files\Storage</Filter>
+    </Text>
+    <Text Include="Storage\NhanVien.txt">
       <Filter>Resource Files\Storage</Filter>
     </Text>
   </ItemGroup>

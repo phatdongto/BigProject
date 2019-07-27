@@ -6,9 +6,9 @@ void BaseOrder::ShowInfor() {
 	date m_book_day;
 	vector<SellItem> m_VSellItem;*/
 
-	cout << "ID: " << m_OrderID << endl;
-	cout << "name: " << m_customer_name << endl;
-	cout << "Book day: " << m_book_day.DToString();
+	cout <<"ID: "<< m_OrderID<<endl;
+	cout << "name: " << m_customer_name;
+	m_book_day.DToString();
 	cout << endl;
 
 	for (int i = 0; i < m_VSellItem.size(); i++) {
