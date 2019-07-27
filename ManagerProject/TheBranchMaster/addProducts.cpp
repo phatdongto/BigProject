@@ -59,6 +59,26 @@ void addProducts::removeStorage(vector<StorageItem>& VBItems, ManageVector m)
 	else if (found == true) cout << "Deleted successfully!" << endl;
 	ManageVector::ExportItemsToTXT(VBItems);
 }
+void addProducts::changeStorage(vector<StorageItem>& VBItems, string ID)
+{
+	for (int i = 0; i < VBItems.size(); i++)
+		if (VBItems[i].CompareID(ID) == 1)
+		{
+			VBItems[i].EnterInfor();
+		}
+}
+StorageItem addProducts::searchStorageID(vector<StorageItem> VBItems, string ID)
+{
+	for (int i = 0; i < VBItems.size(); i++)
+		if (VBItems[i].CompareID(ID) == 1)
+			return VBItems[i];
+}
+StorageItem addProducts::searchStorageMoney(vector<StorageItem> VBItems, long long money)
+{
+	for (int i = 0; i < VBItems.size(); i++)
+		if (VBItems[i].CompareMoney(money) == 1)
+			return VBItems[i];
+}
 //void addProducts::removeStorage(vector<StorageItem>& VBItems) // size = 1, size = TXT = 19
 //{
 //	string _ID; // n + 1 = out of range
