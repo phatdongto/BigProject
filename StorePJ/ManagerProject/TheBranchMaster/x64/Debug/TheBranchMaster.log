@@ -1,6 +1,38 @@
-﻿  ShoppingMenu.cpp
-C:\Users\Dell\source\repos\ManagerProject\ManagerProject\TheBranchMaster\Token.h(14,1): warning C4267:  'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\Dell\source\repos\ManagerProject\ManagerProject\TheBranchMaster\Token.h(18,1): warning C4267:  '=': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\Dell\source\repos\ManagerProject\ManagerProject\TheBranchMaster\Token.h(22,1): warning C4267:  'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\Dell\source\repos\ManagerProject\ManagerProject\TheBranchMaster\ShoppingMenu.cpp(11,21): warning C4267:  '=': conversion from 'size_t' to 'int', possible loss of data
-  TheBranchMaster.vcxproj -> C:\Users\Dell\source\repos\ManagerProject\ManagerProject\x64\Debug\TheBranchMaster.exe
+﻿  addProducts.cpp
+C:\Users\Dell\source\repos\StorePJ\ManagerProject\TheBranchMaster\Token.h(14,1): warning C4267:  'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Dell\source\repos\StorePJ\ManagerProject\TheBranchMaster\Token.h(18,1): warning C4267:  '=': conversion from 'size_t' to 'int', possible loss of data
+  BaseItems.cpp
+C:\Users\Dell\source\repos\StorePJ\ManagerProject\TheBranchMaster\Token.h(22,1): warning C4267:  'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Dell\source\repos\StorePJ\ManagerProject\TheBranchMaster\Token.h(14,1): warning C4267:  'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Dell\source\repos\StorePJ\ManagerProject\TheBranchMaster\Token.h(18,1): warning C4267:  '=': conversion from 'size_t' to 'int', possible loss of data
+  Console.cpp
+  Date.cpp
+C:\Users\Dell\source\repos\StorePJ\ManagerProject\TheBranchMaster\Token.h(22,1): warning C4267:  'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Dell\source\repos\StorePJ\ManagerProject\TheBranchMaster\Token.h(14,1): warning C4267:  'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Dell\source\repos\StorePJ\ManagerProject\TheBranchMaster\Token.h(18,1): warning C4267:  '=': conversion from 'size_t' to 'int', possible loss of data
+  main.cpp
+  MainMenu.cpp
+  MenuStage.cpp
+  OptionMenu.cpp
+  Order.cpp
+C:\Users\Dell\source\repos\StorePJ\ManagerProject\TheBranchMaster\Token.h(22,1): warning C4267:  'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Dell\source\repos\StorePJ\ManagerProject\TheBranchMaster\Token.h(14,1): warning C4267:  'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Dell\source\repos\StorePJ\ManagerProject\TheBranchMaster\Token.h(18,1): warning C4267:  '=': conversion from 'size_t' to 'int', possible loss of data
+  ShoppingMenu.cpp
+C:\Users\Dell\source\repos\StorePJ\ManagerProject\TheBranchMaster\Token.h(22,1): warning C4267:  'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Dell\source\repos\StorePJ\ManagerProject\TheBranchMaster\Token.h(14,1): warning C4267:  'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Dell\source\repos\StorePJ\ManagerProject\TheBranchMaster\Token.h(18,1): warning C4267:  '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Dell\source\repos\StorePJ\ManagerProject\TheBranchMaster\Token.h(22,1): warning C4267:  'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Dell\source\repos\StorePJ\ManagerProject\TheBranchMaster\ShoppingMenu.cpp(12,21): warning C4267:  '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Dell\source\repos\StorePJ\ManagerProject\TheBranchMaster\ShoppingMenu.cpp(32,15): warning C4244:  'initializing': conversion from 'double' to 'int', possible loss of data
+  SplashStage.cpp
+C:\Users\Dell\source\repos\StorePJ\ManagerProject\TheBranchMaster\ShoppingMenu.cpp(47,8): warning C4244:  'initializing': conversion from 'double' to 'int', possible loss of data
+  Stage.cpp
+  StageManager.cpp
+  VectorInteract.cpp
+C:\Users\Dell\source\repos\StorePJ\ManagerProject\TheBranchMaster\SplashStage.cpp(24,73): warning C4267:  '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Dell\source\repos\StorePJ\ManagerProject\TheBranchMaster\Token.h(14,1): warning C4267:  'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Dell\source\repos\StorePJ\ManagerProject\TheBranchMaster\Token.h(18,1): warning C4267:  '=': conversion from 'size_t' to 'int', possible loss of data
+  Generating Code...
+C:\Users\Dell\source\repos\StorePJ\ManagerProject\TheBranchMaster\Token.h(22,1): warning C4267:  'initializing': conversion from 'size_t' to 'int', possible loss of data
+  TheBranchMaster.vcxproj -> C:\Users\Dell\source\repos\StorePJ\ManagerProject\x64\Debug\TheBranchMaster.exe

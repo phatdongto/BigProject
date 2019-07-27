@@ -51,12 +51,13 @@ vector<SellItem> GetItemForOrder(string Path) {
 
 			getline(FileIn, tmp, '\n');
 		vector<string> hold = Tokenizer::Parse(tmp, ", ");
-		add.setID(hold[0]);  //0ID  1Name   2Company  3Origin  4Price 5quantity
+		add.setID(hold[0]);  //0ID  1Name  2Quantity  3Company  4Origin  5Price 6quantity
 		add.setName(hold[1]);
-		add.setCompany(hold[2]);
-		add.setOrigin(hold[3]);
-		add.setPrice(stoi(hold[4]));
-		add.setQuantity(stoi(hold[5]));
+		add.setQuantity(stoi(hold[2]));
+		add.setCompany(hold[3]);
+		add.setOrigin(hold[4]);
+		add.setPrice(stoi(hold[5]));
+		add.setQuantity(stoi(hold[6]));
 		VSellItem.push_back(add);
 	}
 	FileIn.close();
@@ -122,26 +123,6 @@ bool ManageVector::ExportItemsToTXT(vector<StorageItem>& VBItems)
 	return true;
 }
 
-bool ManageVector::ExportOrdersToTXT(vector<BaseOrder>& VBOders)
-{
-	ofstream Listout;
-	Listout.open("OrderMaterial//ItemChoosen.txt");
-	if (!Listout.is_open()) {
-		return false;
-	}
-	for (int i = 0; i < VBOders.size(); i++) {
-		Listout << VBOders[i].OrderID() << ", ";
-		Listout << VBOders[i].CustomerName() << ", ";
-		Listout << VBOders[i].BookDay().DToString();
-		if (i != VBOders.size() - 1)
-			Listout << endl;
-		ExportChoosenItem(VBOders[i].OrderID(), VBOders[i].Vector());
-	}
-
-	Listout.close();
-	return true;
-}
-
 //while (!FileIn.eof()) {
 //	/*if(!FileIn.eof())*/
 //	
@@ -173,25 +154,6 @@ string ManageVector::ToString(StorageItem c)
 	writer << c.ID() << ", " << c.Name() << ", " << c.Company() << ", " << c.Origin() << ", " << c.Price() << ", " << c.Quantity();
 	return writer.str();
 
-}
-
-bool ManageVector::ExportChoosenItem(string path, vector<SellItem> choose)
-{ 
-	ofstream Itemout;
-	Itemout.open("OrderMaterial//ItemChoosen//No. "+path+".txt");
-	if (!Itemout.eof()) return false;
-
-	for (int i = 0; i < choose.size(); i++) {
-		Itemout << choose[i].ID() << ", ";
-		Itemout << choose[i].Name() << ", ";
-		Itemout << choose[i].Company() << ", ";
-		Itemout << choose[i].Origin() << ", ";
-		Itemout << choose[i].Quantity();
-		if (i != choose.size() - 1);
-		Itemout << endl;
-	}
-	Itemout.close();
-	return true;
 }
 
 

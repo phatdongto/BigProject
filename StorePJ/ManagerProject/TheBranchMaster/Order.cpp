@@ -12,7 +12,7 @@ void BaseOrder::ShowInfor() {
 	cout << endl;
 
 	for (int i = 0; i < m_VSellItem.size(); i++) {
-		m_VSellItem[i].ShowInfor();
+		m_VSellItem[i].ShowInfor(0,0);
 		cout << endl;
 	}
 }

@@ -7,7 +7,8 @@ ShoppingMenu::ShoppingMenu(string name) : Stage(name) { //vector<stroerageitem V
 	for (int i = 0; i < VBItems.size(); i++) {
 		list.push_back(VBItems[i].Name());
 	}
-
+	list.push_back("Back");
+	
 	count = list.size();
 
 
@@ -28,12 +29,12 @@ void ShoppingMenu::drawStage()
 {
 	// ve~ lisst item ra
 	vector<string>::iterator p = list.begin();
-	int i = 1;
+	int i = 1, n = ceil(list.size()/3);
 	while (p != list.end()) {
 		if (choice == i) Console::setTextColor(COLOR_YELLOW);  // set mau hay lam gi voi cai item duoc chon
 
 
-		Console::printxy(*p, 15 + 20 * ((i - 1) / 4), (i - 1) % 4 + 5);			// code ve chinh
+		Console::printxy(*p, 5 + 20*((i-1)/n), (i-1)%n + 5);			// code ve chinh
 
 		Console::setTextColor(COLOR_WHITE);			// reset lai mau hay bla bla gi do
 		p++;
@@ -43,7 +44,7 @@ void ShoppingMenu::drawStage()
 
 int ShoppingMenu::input(int key)
 {
-
+	int n = ceil(list.size() / 3);
 	// xu ly key
 	if (key == KEY_UP) {
 		choice--;
@@ -56,17 +57,20 @@ int ShoppingMenu::input(int key)
 		StageManager::drawStage();
 	}
 	else if (key == KEY_RIGHT) {
-		choice += 4;
+		choice += n;
 		choice = choice > count ? choice - count : choice;
 		StageManager::drawStage();
 	}
 	else if (key == KEY_LEFT) {
-		choice -= 4;
+		choice -= n;
 		choice = choice < 1 ? choice + count : choice;
 		StageManager::drawStage();
 	}
 	else if (key == KEY_ENTER) {
-		if (choice == 1) {
+		ManageVector x;
+		vector<StorageItem> VBItems;
+		x.ImportItemsToVectorA(VBItems);
+		/*if (choice == 1) {
 			StageManager::changeStage("shopMenu");
 		}
 		else if (choice == 2) {
@@ -77,8 +81,19 @@ int ShoppingMenu::input(int key)
 		}
 		else if (choice == 4) {
 			StageManager::changeStage("mainMenu");
+		}*/
+		/*for (int i = 0; i < VBItems.size(); i++) {
+			if (choice == i+1) {
+				StageManager::drawStage();
+				cout << endl;
+				VBItems[i].ShowInfor();
+			}
+		}*/
+		if (choice-1 < VBItems.size()) {
+			StageManager::drawStage();
+			VBItems[choice-1].ShowInfor(CONSOLE_WIDTH - 25, 8);
 		}
-		//for(int i = 0; i < VBItems())
+		if (choice == VBItems.size() + 1) StageManager::changeStage("mainMenu");
 	}
 
 	return 0;

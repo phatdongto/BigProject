@@ -63,7 +63,7 @@ public:
 	
 public:
 	void EnterInfor();
-	void ShowInfor();
+	void ShowInfor(uint8_t x, uint8_t y);
 };
 
 class StorageItem : public BaseItem{  //thong tin vat pham luu tru
@@ -85,8 +85,8 @@ public:
 		BaseItem::EnterInfor();
 		cout << "Quantity: "; cin >> m_quantity;
 	}
-	void ShowInfor() {
-		BaseItem::ShowInfor();
+	void ShowInfor(uint8_t x, uint8_t y) {
+		BaseItem::ShowInfor(x, y);
 		cout << "Quantity: " << m_quantity;
 	}
 };
@@ -108,8 +108,8 @@ public:
 		BaseItem::EnterInfor();
 		cout << "Quantity: "; cin >> m_quantity;
 	}
-	void ShowInfor() {
-		BaseItem::ShowInfor();
+	void ShowInfor(uint8_t x, uint8_t y) {
+		BaseItem::ShowInfor(x, y);
 		cout << "Quantity: " << m_quantity;
 	}
 };

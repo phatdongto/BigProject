@@ -15,10 +15,10 @@ private:
 	date m_book_day;
 	vector<SellItem> m_VSellItem;
 public:
-	string& OrderID() { return m_OrderID; }
-	string& CustomerName() { return m_customer_name; }
-	date& BookDay() { return m_book_day; }
-	vector<SellItem>& Vector() { return m_VSellItem; }
+	string OrderID() { return m_OrderID; }
+	string CustomerName() { return m_customer_name; }
+	date BookDay() { return m_book_day; }
+	vector<SellItem> Vector() { return m_VSellItem; }
 
 	void setCustomerName(string value) { m_customer_name = value; }
 	void setOrderID(string value) { m_OrderID = value; }
