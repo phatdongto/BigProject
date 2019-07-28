@@ -124,6 +124,7 @@
     <ClCompile Include="MenuStage.cpp" />
     <ClCompile Include="OptionMenu.cpp" />
     <ClCompile Include="Order.cpp" />
+    <ClCompile Include="Report.cpp" />
     <ClCompile Include="ShoppingMenu.cpp" />
     <ClCompile Include="SplashStage.cpp" />
     <ClCompile Include="Stage.cpp" />
@@ -140,6 +141,7 @@
     <ClInclude Include="MenuStage.h" />
     <ClInclude Include="OptionMenu.h" />
     <ClInclude Include="Order.h" />
+    <ClInclude Include="Report.h" />
     <ClInclude Include="ShoppingMenu.h" />
     <ClInclude Include="SplashStage.h" />
     <ClInclude Include="Stage.h" />

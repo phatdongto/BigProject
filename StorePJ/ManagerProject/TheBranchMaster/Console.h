@@ -18,7 +18,8 @@ using namespace std;
 #define COLOR_GREEN 10
 #define COLOR_YELLOW 14
 
-class Console{
+class Console
+{
 public:
 	static void setConsoleSize(int width, int height);
 	static void setTextColor(int color);
