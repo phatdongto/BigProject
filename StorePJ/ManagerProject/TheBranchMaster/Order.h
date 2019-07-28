@@ -18,8 +18,11 @@ public:
 	string OrderID() { return m_OrderID; }
 	string CustomerName() { return m_customer_name; }
 	date BookDay() { return m_book_day; }
-	vector<SellItem> Vector() { return m_VSellItem; }
-
+	vector<SellItem>& Vector() { return m_VSellItem; }
+	//vector<SellItem> getVector(int index) 
+	//{
+	//	return m_VSellItem;// ne
+	//}
 	void setCustomerName(string value) { m_customer_name = value; }
 	void setOrderID(string value) { m_OrderID = value; }
 	void setVector(vector<SellItem> v) { m_VSellItem = v; }
